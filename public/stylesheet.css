@@ -1,0 +1,1069 @@
+/* Reset CSS */ 
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+a:focus
+{
+outline:0;
+} 
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+a:hover {
+	color: red;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*----- Elements pour toutes les pages en frontend -----*/
+
+/*----- HEADER ------*/
+header {
+	position: fixed;
+	z-index: 90;
+	display: flex;
+	background-color: #2f3640;
+	width: 100%;
+	height: 50px;
+	color: white;
+}
+
+header ul {
+	display: flex; 
+	justify-content: center;
+	margin: auto;
+	padding: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header a {
+	padding-left: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #00a8ff; /*couleur bleu*/
+}
+
+/*----- FOOTER -----*/
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #2f3640;  
+	font-family: sans-serif;
+	color: white;
+}
+
+.copyright {
+	padding: 10px 40px;
+	text-align: center;	
+}
+
+/*----- Page Accueil -----*/
+
+
+.index_title  {
+	display: flex;
+	flex-direction: column;
+	background-image: url("../public/images/aventure.jpg");
+	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 780px;
+}
+.index_title h1 {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 4em;
+	padding-top: 150px;
+	text-align: center;
+}
+.index_title h2 {
+	font-family: sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
+.index_title h3 {
+	font-family: sans-serif;
+	font-size: 2em;
+	padding-top: 10px;
+	text-align: center;
+}
+.index_chapters {
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+}
+.pagePagination {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pagePagination:hover {
+	color: #00a8ff;
+}
+
+.pagePagination a {
+	color: orange;
+}
+
+.pagePagination a:hover {
+	color: #00a8ff;
+}
+
+
+
+/*----- Page chapitre -----*/
+.chapters_header {
+	background-image: url("../public/images/aventureChapitre.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	padding-top: 50px;
+	height: 780px;
+	text-align: center;
+}
+.chapters_header h1,
+.chapters_header h2 {
+	color: white;
+}
+.chapters_header h1 {
+	font-size: 3em;
+	font-weight: bold;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.chapters_header h2 {
+	font-size: 2em;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+#edit_chapters {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	font-family: sans-serif;
+}
+#edit_chapters hr {	
+	margin-left: 0px;
+	width: 50%;
+	height: 2px;
+	background-color: orange;
+	border: none; 
+}
+.comment {
+	font-family: sans-serif;
+}
+.comments_publication {
+	font-weight: bold;
+	padding-top: 50px;
+	margin-bottom: 20px;
+}
+.comments h4 {
+	font-size: 1.4em;
+	padding-top: 20px;
+	padding-left: 72px;
+}
+.comment_published {
+	padding-bottom: 15px;
+}
+.comments_form {
+	padding-top: 30px;
+}
+.id_chapters,
+.pseudo,
+.comment {
+	font-family: sans-serif;
+	margin-left: 72px;
+	margin-bottom: 20px;
+	width: 50%;
+	color: orange;
+}
+.submit {
+	margin-left: 72px;
+	margin-bottom: 20px;
+}
+#edit_chapters p {
+	font-family: sans-serif;
+	margin-left: 72px;
+	margin-bottom: 20px;
+}
+.signal:hover {
+	color: red;
+}
+.signal_message {
+	padding-bottom: 10px;
+	padding-left: 72px;
+	color: coral;
+}
+
+#jean {
+    height: 300px;
+    border-radius: 25px;
+    margin: 30px 50px;
+    max-width: 100%;
+}
+
+#biographie {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+
+#biographie h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#biographieTexte {
+    margin: 20px 50px 60px 0;
+}
+
+#biographieTexte h2 {
+	margin-bottom: 0;
+}
+
+/*----- Elements pour pages chapitres et admin -----*/
+
+.chapters_published_home {
+	padding: 20px 10px;
+	margin: 10px auto; 
+	border: 2px solid lightgrey;
+	border-radius: 3px 3px 3px 3px;
+	width: 90%;	
+	text-align: center;
+}
+
+
+.chapters_published_home:hover {
+	background-color: gold;
+}
+
+.chapters_published_home a {
+	color: orangered; /*rouge*/
+}
+
+.chapters_published_home a:hover {
+	color: #00a8ff; /*bleu*/
+	font-weight: bolder;
+}
+
+.chapters_published {
+	padding: 20px 10px;
+	margin: 10px auto; 
+	border: 2px solid lightgrey;
+	border-radius: 3px 3px 3px 3px;
+	width: 90%;	
+	text-align: center;
+}
+
+.chapters_published a {
+	color: orangered; /*rouge*/
+}
+
+
+.chapters_published h3 {
+	font-weight: bold;
+	font-size: 1.3em;
+	color: black;
+}
+.chapters_published p {
+	margin-bottom: 15px;
+}
+.header_admin {
+	display: flex; 
+}
+
+
+/*----- Page Admin -----*/
+
+.header_admin {
+	border-bottom: 2px solid orange;
+	display: flex;
+	font-size: 1.2em;
+}
+
+
+.header_admin h1 {
+	margin: auto;
+	text-align: center;
+}
+
+.header_admin a {
+	margin: auto;
+}
+
+
+.admin_chapters h1,
+.admin_comments h1,
+.header_admin {
+	font-family: sans-serif; 
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #545454;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-top: 70px;
+	padding-left: 50px;
+}
+.navigation {
+	display: flex;
+	flex-direction: row; 
+	margin-top: 200px;
+}
+.navigation_icones,
+.navigation-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation_title {
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color: #545454;
+	padding-left: 30px;
+	text-align: center;
+}
+.chapters_link_title {
+	padding-top: 10px;
+}
+.comments_link_title {
+	padding-top: 17px;
+}
+
+/*----- Page Admin Chapitre -----*/
+.admin_chapters form {
+	padding-top: 50px;
+}
+
+.nav_home_chapters {
+	margin-left: 1100px;
+}
+.nav_comments {
+	margin-left: 10px; 
+}
+.chapter_form {
+	width: 90%;
+	max-width: 90%;
+	margin: auto;
+}
+.title {
+	margin-bottom: 20px;
+	width: 50%;
+	color: orange;
+	font-family: sans-serif;
+}
+.submit {
+	margin-left: 72px;
+	margin-bottom: 20px;
+}
+
+/*----- Page Update -----*/
+.header_update {
+	font-family: sans-serif;
+	color: #545454; 
+}
+.header_update {
+	padding-top: 75px;
+	border-bottom: 2px solid orange;
+	display: flex;
+}
+.header_update h1 {
+	font-size: 2.2em;
+	font-weight: bold;
+	color: #545454;
+	padding-left: 72px;
+	padding-bottom: 20px;
+}
+.chapter_form_update {
+	margin-top: 200px; 
+	margin-left: 72px;
+	width: 90%;
+}
+.submit {
+	font-family: sans-serif;
+	color: orange;
+}
+.nav_home_update {
+	margin-left: 900px;
+}
+
+/*----- Page Admin Commentaires -----*/
+.show_comment {
+	padding-bottom: 10px;
+}
+.inser_comment {
+	margin-left: 30px;;
+	width: 5%;
+	height: 2px;
+	background-color: orange;
+	border: none; 
+}
+.admin_comments {
+	display: flex;
+	flex-direction: row;
+}
+.show_all_comments,
+.comments_signal {
+	display: flex; 
+	flex-direction: column;
+	font-family: sans-serif;
+	padding-left: 72px;
+	padding-top: 20px;
+	width: 50%;
+}
+.admin_comments h2, 
+.comments_signal h2 {
+	font-family: sans-serif;
+	font-size: 1.7em;
+	padding-bottom: 30px;
+	color: #545454;
+}
+.fa-times {
+	color: red;
+}
+
+
+.nav_chapters {
+	margin-left: 10px;
+}
+
+.title_ref {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+
+/*----- Page pour le login -----*/
+.connexion_header {
+	font-family: sans-serif;
+	padding-top: 50px;
+	height: 100px;
+	color: black;
+}
+.connexion_header h1 {
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.connexion_header h2 {
+	font-size: 2em;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.connexion_header h3 {
+	font-size: 1.8em;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+.connexion_container {
+	display: flex;
+	flex-direction: column;	
+	margin-bottom: 285px;
+}
+.connexion_container p {
+	font-family: sans-serif;
+	color: coral;
+	font-size: 1.3em;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+.connexion_form {
+	padding: 10px 0px;
+	margin: 5px auto;
+}
+.email,
+.password {
+	margin-left: 26px;
+	margin-bottom: 5px;
+	width: 80%;
+	color: black;
+	font-family: sans-serif;
+}
+.connexion {
+	margin-left: 52px;
+}
+.scroll_white_connexion {
+	margin: 0 auto;
+	height: 9%;
+	width: 4%;
+	margin-top: 150px;
+}
+/*----- Flash message----*/
+.danger {
+	font-family: sans-serif;
+	font-size: 1.4em;
+	color: coral;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+
+		/*-------------------------*/
+		/*----- MEDIA QUERIES -----*/
+		/*-------------------------*/
+		/*Ils sont classés par partie : 
+		Home Page, 
+		Page Chapitre, 
+		Page Login, 
+		Page Biographie,
+		Page Admin,
+		Page Admin Chapitre, 
+		Page update 
+		page Admin Commentaire */
+
+		/*----- Home Page -----*/
+		@media all and (min-width: 320px) and (max-width: 374px) {
+
+			.index_header {
+				padding-left: 0px!important;
+			}
+			.index_header h1 {
+				font-size: 1.4em;
+				padding-left: 35px;
+			}
+			.index_header h3 {
+				font-size: 1.4em;
+			}
+			.index_title {
+				color: white; 
+				height: 600px;
+			}
+			.index_title h1 {
+				font-size: 3em;
+			}
+			.index_title h2 {
+				font-size: 2em;
+			}
+			.index_title h3 {
+				padding-top: 0px!important;
+				font-size: 1.5em;
+			}	
+		}
+
+		@media all and (min-width: 375px) and (max-width: 424px) {
+		
+			.index_header {
+				padding-left: 0px!important;
+			}
+			.index_header h1 {
+				font-size: 1.4em;
+				padding-left: 35px;
+			}
+			.index_header h3 {
+				font-size: 1.4em;
+			}
+			.index_title {
+				color: white; 
+				height: 600px;
+			}
+			.index_title h1 {
+				font-size: 3em;
+			}
+			.index_title h2 {
+				font-size: 2em;
+			}
+			.index_title h3 {
+				padding-top: 0px!important;
+				font-size: 1.5em;
+			}	
+		}
+
+		@media all and (min-width: 425px) and (max-width: 767px) {
+		
+			.index_header {
+				padding-left: 0px!important;
+				text-align: center;
+			}
+			.index_header h1 {
+				font-size: 1.4em;
+				padding-left: 35px;
+			}
+			.index_header h3 {
+				font-size: 1.4em;
+			}
+			.index_title {
+				color: white; 
+				height: 600px;
+			}
+			.index_title h1 {
+				font-size: 3em;
+			}
+			.index_title h2 {
+				font-size: 2em;
+			}
+			.index_title h3 {
+				padding-top: 0px!important;
+				font-size: 1.5em;
+			}	
+		
+		}	
+
+		@media all and (min-width: 768px) and (max-width: 1024px) {
+		
+			.index_header h1 {
+				font-size: 1.4em;
+				padding-left: 35px;
+			}
+			.index_header h3 {
+				font-size: 1.4em;
+			}
+			.index_title {
+				height: 600px;
+			}
+			.index_title h1 {
+				font-size: 3em;
+			}
+			.index_title h2 {
+				font-size: 2em;
+			}
+			.index_title h3 {
+				padding-top: 0px!important;
+				font-size: 1.5em;
+			}	
+	
+		}
+
+		@media all and (min-width: 1025px) and (max-width: 1439px) {
+	
+			.index_header {
+				margin: auto;
+			}
+			.index_header h1 {
+				font-size: 1.4em;
+				padding-left: 35px;
+			}
+			.index_header h3 {
+				font-size: 1.4em;
+			}
+			.index_title {
+				height: 600px;
+			}
+			.index_title h1 {
+				font-size: 3em;
+			}
+			.index_title h2 {
+				font-size: 2em;
+			}
+			.index_title h3 {
+				padding-top: 0px!important;
+				font-size: 1.5em;
+			}	
+
+	
+		}
+
+		/*------ Page Chapitre ------*/
+		@media all and (min-width: 320px) and (max-width: 374px) {
+			.chapters_header {
+				height: 600px;
+			}
+			#edit_chapters p {
+				margin-left: 0px!important;
+			}
+		
+		}
+
+		@media all and (min-width: 375px) and (max-width: 424px) {
+			.chapters_header {
+				height: 600px;
+			}
+
+			#edit_chapters p {
+				margin-left: 0px!important;
+			}
+
+		}
+
+		@media all and (min-width: 425px) and (max-width: 767px) {
+			.chapters_header {
+				height: 600px;
+			}
+			#edit_chapters p {
+				margin-left: 0px!important;
+			}
+	
+		}
+
+		/*------ Page Login -----*/
+		@media all and (min-width: 320px) and (max-width: 375px) {
+			.connexion_header h1 {
+				padding-left: 20px;
+			}
+			.connexion_header h3 {
+				padding-left: 40px;
+			}
+			.connexion_form input {
+				margin-left: 8px;
+			}
+		}
+
+		@media all and (min-width: 376px) and (max-width: 424px) {
+			.connexion_header h1 {
+				padding-left: 20px;
+			}
+			.connexion_header h3 {
+				padding-left: 40px;
+			}
+			.connexion_form input {
+				margin-left: 8px;
+			}
+		}
+
+		@media all and (min-width: 425px) and (max-width: 767px) {
+			.connexion_header h1 {
+				padding-left: 20px;
+			}
+			.connexion_header h3 {
+				padding-left: 40px;
+			}
+			.connexion_form input {
+				margin-left: 8px;
+			}
+		}
+
+		/*----- Biographie -----*/
+
+		@media all and (min-width: 320px) and (max-width: 1024px) {
+			#biographie {
+				display: block;
+			}
+			#jean {
+				display: block;
+				margin: auto;
+			}
+			#biographieTexte {
+				text-align: center;
+				display: block;
+				margin: auto;
+				padding: 0 60px;
+			}
+		}
+
+
+		/*----- Page Admin -----*/
+		@media all and (min-width: 320px) and (max-width: 374px) {
+			header h1,
+			header h3 {
+				font-size: 1em!important; 
+			}
+
+			.navigation {
+				margin-top: 80px;
+			}
+			.navigation_title a {
+				font-size: 0.8em;
+			}
+			.comments_link_title {
+				padding-top: 0px!important; 
+			}
+		}
+
+		@media all and (min-width: 375px) and (max-width: 425px) {
+			.index_header h1 {
+				padding-left: 53px!important;
+			}
+
+			header h1,
+			header h3 {
+				font-size: 1em!important; 
+			}
+			.header_admin {
+				padding-left: 10px;
+			}
+			.header_admin h1 {
+				font-size: 0.5em;
+				margin-top: 10px;
+			}
+			.navigation {
+				margin-top: 80px;
+			}
+			.navigation_title a {
+				font-size: 0.8em;
+			}
+			.comments_link_title {
+				padding-top: 0px!important; 
+			}
+		}
+
+		@media all and (min-width: 426px) and (max-width: 768px) {
+			.index_header h1 {
+				padding-left: 53px!important;
+			}
+
+			.index_title h2 {
+				text-align: center;
+			}
+
+			header h1,
+			header h3 {
+				font-size: 1em!important; 
+			}
+			.header_admin {
+				padding-left: 10px;
+			}
+			.header_admin h1 {
+				font-size: 0.5em;
+				margin-top: 10px;
+			}
+			.navigation {
+				margin-top: 80px;
+			}
+			.navigation_title a {
+				font-size: 0.8em;
+			}
+			.comments_link_title {
+				padding-top: 0px!important; 
+			}
+		}
+
+		@media all and (min-width: 769px) and (max-width: 1024px) {
+			.index_header h1 {
+				padding-left: 53px!important;
+			}
+
+
+			header h1,
+			header h3 {
+				font-size: 1em!important; 
+			}
+			.header_admin {
+				padding-left: 10px;
+			}
+			.header_admin h1 {
+				font-size: 0.5em;
+				margin-top: 10px;
+			}
+			.navigation {
+				margin-top: 80px;
+			}
+			.navigation_title a {
+				font-size: 0.8em;
+			}
+			.comments_link_title {
+				padding-top: 0px!important; 
+			}
+		}
+
+		/*----- Page Admin Chapitre-----*/
+		@media all and (min-width: 320px) and (max-width: 375px) {
+
+			.admin_chapters h1 {
+				padding-left: 10px;
+				padding-top: 20px!important;
+				font-size: 1.6em;
+			}
+			.admin_chapters form {
+				margin-left: 15px;
+				padding-top: 20px!important;
+			}
+		}
+
+		@media all and (min-width: 376px) and (max-width: 425px) {
+
+
+			.nav_home_chapters {
+				padding-left: 90px;
+			}
+			.admin_chapters h1 {
+				padding-left: 10px;
+				padding-top: 20px!important;
+				font-size: 1.6em;
+			}
+			.admin_chapters form {
+				margin-left: 15px;
+				padding-top: 20px!important;
+			}
+		}
+
+		@media all and (min-width: 769px) and (max-width: 1024px) {
+	
+			.admin_chapters h1 {
+				padding-left: 10px;
+				padding-top: 20px!important;
+				font-size: 1.6em;
+			}
+			.admin_chapters form {
+				margin-left: 15px;
+				padding-top: 20px!important;
+			}
+		}
+
+		/*----- Page update -----*/
+		@media all and (min-width: 320px) and (max-width: 375px) {
+			.header_update h1 {
+				font-size: 1.5em;
+				padding-left: 15px;
+			}
+			.nav_home_update {
+				margin-left: 10px;
+			}
+	
+			.chapter_form_update {
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+
+		}
+
+		@media all and (min-width: 376px) and (max-width: 425px) {
+			.header_update h1 {
+				font-size: 1.5em;
+				padding-left: 15px;
+			}
+			.nav_home_update {
+				margin-left: 10px;
+			}
+
+			.chapter_form_update {
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+		}
+
+		@media all and (min-width: 426px) and (max-width: 768px) {
+			.header_update h1 {
+				font-size: 1.5em;
+				padding-left: 15px;
+			}
+			.nav_home_update {
+				margin-left: 10px;
+			}
+
+			.chapter_form_update {
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+		}
+
+		@media all and (min-width: 769px) and (max-width: 1024px) {
+			.header_update h1 {
+				font-size: 1.5em;
+				padding-left: 15px;
+			}
+			.nav_home_update {
+				margin-left: 10px;
+			}
+
+			.chapter_form_update {
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+		}
+
+		/*----- Page admin commentaire -----*/
+		@media all and (min-width: 320px) and (max-width: 375px) {	
+
+			.header_admin h1 {
+				font-size: 1.5em;
+			}
+
+			.admin_comments {
+				display: block;
+			}
+			.show_all_comments,
+			.comments_signal {
+				padding-top: 10px;
+				margin: auto;
+				padding-left: 0px;
+			}
+		}
+
+		@media all and (min-width: 376px) and (max-width: 425px) {	
+
+			.header_admin h1 {
+				font-size: 1.5em;
+			}
+			.admin_comments {
+				display: block;
+			}
+			.show_all_comments,
+			.comments_signal {
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+		}
+
+		@media all and (min-width: 426px) and (max-width: 768px) {	
+
+			.header_admin h1 {
+				font-size: 1.5em;
+			}
+
+			.admin_comments {
+				display: block;
+			}
+			.show_all_comments,
+			.comments_signal {
+				padding-top: 10px;
+				margin: auto;
+			}
+		}
+
+		@media all and (min-width: 769px) and (max-width: 1024px) {	
+
+			.header_admin h1 {
+				font-size: 1.5em;
+			}
+	
+			.admin_comments {
+				display: flex;
+			}
+			.show_all_comments,
+			.comments_signal {
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+		}
+
+	
