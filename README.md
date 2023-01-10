@@ -1,5 +1,8 @@
+Développement d’une application de blog simple en PHP avec une base de données MySQL. 
+
 Créez un blog pour un écrivain (projet avec Openclassrooms)
-Développement d’une application de blog simple en PHP avec une base de données MySQL. Le projet comporte une interface frontend (lecture des billets) et une interface backend (administration des billets pour l'écriture). 
+
+Le projet comporte une interface frontend (lecture des billets) et une interface backend (administration des billets pour l'écriture). 
 
 On retrouve tous les éléments d'un CRUD :
 - Create : création de billets
